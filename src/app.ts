@@ -1,8 +1,7 @@
 import express from 'express';
 import cors from 'cors';
 import orderRoutes from './routes/orderRoutes';
-
-const app = express();
+app = express();
 
 // Middlewares
 app.use(cors());
