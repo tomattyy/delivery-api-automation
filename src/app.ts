@@ -1,13 +1,14 @@
 import express from 'express';
 import cors from 'cors';
 import orderRoutes from './routes/orderRoutes';
-app = express();
+
+const app = express();
 
 // Middlewares
 app.use(cors());
 app.use(express.json());
 
 // Routes
-app.use('/api/orders', orderRoutes);
+app.use('/api/order', orderRoutes);
 
 export default app;
